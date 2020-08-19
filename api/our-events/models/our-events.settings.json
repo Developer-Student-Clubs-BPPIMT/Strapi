@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_events",
+  "info": {
+    "name": "Our Events"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "Speaker": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "default": "2020-09-26T06:30:00.000Z",
+      "required": true,
+      "unique": true
+    },
+    "Learn": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Register": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

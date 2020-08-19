@@ -1,0 +1,129 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "Member"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "Stream": {
+      "type": "enumeration",
+      "enum": [
+        "AEIE",
+        "BBA",
+        "BCA",
+        "BME",
+        "CE",
+        "CSE",
+        "ECE",
+        "EE",
+        "IT",
+        "MBA",
+        "MCA",
+        "ME",
+        "Other"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "Year": {
+      "type": "enumeration",
+      "enum": [
+        "first",
+        "second",
+        "third",
+        "fourth"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "CollegeID": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "GitHubLink": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "LinkedInLink": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "CodechefUsername": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "HackerRankUsername": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Volunteer": {
+      "type": "enumeration",
+      "enum": [
+        "Yes",
+        "Maybe",
+        "No"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "SelfIntroduction": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "JoinDSC": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "JoinCORE": {
+      "type": "enumeration",
+      "enum": [
+        "Yes",
+        "Maybe",
+        "No"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "Reason": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "Reference": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "our_blogs",
+  "info": {
+    "name": "Our Blogs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Title": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "Author": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Read": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Medium": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
