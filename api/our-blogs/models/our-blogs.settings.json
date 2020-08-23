@@ -40,7 +40,7 @@
       "required": true,
       "unique": true
     },
-    "Medium": {
+    "Platform": {
       "type": "string",
       "required": true,
       "unique": true
