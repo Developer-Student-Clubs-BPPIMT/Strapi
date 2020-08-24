@@ -12,7 +12,7 @@
     "Name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Email": {
       "type": "email",
@@ -27,7 +27,7 @@
         "Other"
       ],
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Stream": {
       "type": "enumeration",
@@ -47,42 +47,26 @@
         "Other"
       ],
       "required": true,
-      "unique": true
-    },
-    "Year": {
-      "type": "enumeration",
-      "enum": [
-        "first",
-        "second",
-        "third",
-        "fourth"
-      ],
-      "required": true,
-      "unique": true
-    },
-    "CollegeID": {
-      "type": "biginteger",
-      "required": true,
-      "unique": true
+      "unique": false
     },
     "GitHubLink": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "LinkedInLink": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "CodechefUsername": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "HackerRankUsername": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "Volunteer": {
@@ -93,17 +77,17 @@
         "No"
       ],
       "required": true,
-      "unique": true
+      "unique": false
     },
     "SelfIntroduction": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "JoinDSC": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "JoinCORE": {
       "type": "enumeration",
@@ -117,13 +101,23 @@
     },
     "Reason": {
       "type": "text",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "Reference": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true
+    },
+    "CollegeName": {
+      "type": "string",
+      "required": true
+    },
+    "Year": {
+      "type": "integer",
+      "min": 1,
+      "max": 4,
+      "required": true
     }
   }
 }
