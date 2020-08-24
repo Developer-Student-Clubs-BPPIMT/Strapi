@@ -1,3 +1,5 @@
 # Strapi application
 
-A quick description of your strapi application
+Headless CMS for our DSC BPPIMT main website. 
+
+
