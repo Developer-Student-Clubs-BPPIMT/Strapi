@@ -32,20 +32,20 @@
     },
     "github": {
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "linkedin": {
       "type": "string",
       "required": false,
-      "unique": true
+      "unique": false
     },
     "codechef": {
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "hackerrank": {
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "volunteer": {
       "type": "string",
