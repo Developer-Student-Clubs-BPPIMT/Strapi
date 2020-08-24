@@ -97,17 +97,17 @@
         "No"
       ],
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Reason": {
       "type": "text",
       "required": false,
-      "unique": true
+      "unique": false
     },
     "Reference": {
       "type": "string",
       "required": false,
-      "unique": true
+      "unique": false
     },
     "CollegeName": {
       "type": "string",
