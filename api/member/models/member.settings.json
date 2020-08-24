@@ -9,115 +9,64 @@
     "timestamps": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
-      "required": true,
-      "unique": false
+      "required": true
     },
-    "Email": {
+    "email": {
       "type": "email",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "Gender": {
-      "type": "enumeration",
-      "enum": [
-        "Male",
-        "Female",
-        "Other"
-      ],
-      "required": true,
-      "unique": false
-    },
-    "Stream": {
-      "type": "enumeration",
-      "enum": [
-        "AEIE",
-        "BBA",
-        "BCA",
-        "BME",
-        "CE",
-        "CSE",
-        "ECE",
-        "EE",
-        "IT",
-        "MBA",
-        "MCA",
-        "ME",
-        "Other"
-      ],
-      "required": true,
-      "unique": false
-    },
-    "GitHubLink": {
-      "type": "string",
-      "required": false,
-      "unique": true
-    },
-    "LinkedInLink": {
-      "type": "string",
-      "required": false,
-      "unique": true
-    },
-    "CodechefUsername": {
-      "type": "string",
-      "required": false,
-      "unique": true
-    },
-    "HackerRankUsername": {
-      "type": "string",
-      "required": false,
-      "unique": true
-    },
-    "Volunteer": {
-      "type": "enumeration",
-      "enum": [
-        "Yes",
-        "Maybe",
-        "No"
-      ],
-      "required": true,
-      "unique": false
-    },
-    "SelfIntroduction": {
-      "type": "text",
-      "required": true,
-      "unique": false
-    },
-    "JoinDSC": {
-      "type": "text",
-      "required": true,
-      "unique": false
-    },
-    "JoinCORE": {
-      "type": "enumeration",
-      "enum": [
-        "Yes",
-        "Maybe",
-        "No"
-      ],
-      "required": true,
-      "unique": false
-    },
-    "Reason": {
-      "type": "text",
-      "required": false,
-      "unique": false
-    },
-    "Reference": {
-      "type": "string",
-      "required": false,
-      "unique": false
-    },
-    "CollegeName": {
+    "college": {
       "type": "string",
       "required": true
     },
-    "Year": {
-      "type": "integer",
-      "min": 1,
-      "max": 4,
+    "stream": {
+      "type": "string",
       "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "github": {
+      "type": "string",
+      "unique": true
+    },
+    "linkedin": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "codechef": {
+      "type": "string",
+      "unique": true
+    },
+    "hackerrank": {
+      "type": "string",
+      "unique": true
+    },
+    "volunteer": {
+      "type": "string",
+      "required": true
+    },
+    "about": {
+      "type": "string",
+      "required": true
+    },
+    "joinReason": {
+      "type": "string",
+      "required": true
+    },
+    "coreReason": {
+      "type": "string"
+    },
+    "referral": {
+      "type": "string"
+    },
+    "core": {
+      "type": "string"
     }
   }
 }
