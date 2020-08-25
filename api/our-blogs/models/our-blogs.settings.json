@@ -10,7 +10,7 @@
   },
   "attributes": {
     "Image": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -28,22 +28,22 @@
     "Description": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Author": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Read": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Platform": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     }
   }
 }

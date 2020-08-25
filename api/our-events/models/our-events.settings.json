@@ -17,12 +17,12 @@
     "Description": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Speaker": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Image": {
       "collection": "file",
@@ -39,17 +39,17 @@
       "type": "date",
       "default": "2020-09-26T06:30:00.000Z",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Learn": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Register": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     }
   }
 }
